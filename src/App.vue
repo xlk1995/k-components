@@ -1,9 +1,24 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>
-    <router-view></router-view>
-  </div>
+  <router-view></router-view>
 </template>
 
-<style scoped lang="scss"></style>
+<style lang="scss">
+* {
+  margin: 0;
+  padding: 0;
+}
+svg {
+  width: 1em;
+  height: 1em;
+}
+
+html,
+body,
+#app,
+.el-container,
+.el-menu {
+  height: 100%;
+}
+</style>

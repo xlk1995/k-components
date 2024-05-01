@@ -1,12 +1,12 @@
 <template>
   <el-container>
     <nav-side :isCollapse="isCollapse" />
-    <el-container>
+    <div class="content-wrapper">
       <nav-header v-model:isCollapse="isCollapse" />
       <el-main>
         <router-view />
       </el-main>
-    </el-container>
+    </div>
   </el-container>
 </template>
 
@@ -18,8 +18,13 @@ import NavHeader from './navHeader/index.vue'
 const isCollapse = ref(false)
 </script>
 
-<style scoped lang="scss">
-.el-menu-vertical-demo:not(.el-menu--collapse) {
-  width: 200px;
+<style lang="scss">
+.content-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  .el-main {
+    flex: 1;
+  }
 }
 </style>

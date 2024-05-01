@@ -19,4 +19,12 @@ const handleCollapse = () => {
 }
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.el-header {
+  height: 60px;
+  // width: 100%;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+</style>

@@ -1,10 +1,8 @@
 <template>
-  <el-header>
-    <span @click="handleCollapse">
-      <el-icon-expand v-if="isCollapse"></el-icon-expand>
-      <el-icon-fold v-else></el-icon-fold>
-    </span>
-  </el-header>
+  <span @click="handleCollapse">
+    <el-icon-expand v-if="isCollapse"></el-icon-expand>
+    <el-icon-fold v-else></el-icon-fold>
+  </span>
 </template>
 
 <script setup lang="ts">

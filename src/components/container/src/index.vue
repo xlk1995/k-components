@@ -1,8 +1,13 @@
 <template>
   <el-container>
-    <nav-side :isCollapse="isCollapse" />
+    <el-aside width="auto">
+      <nav-side :isCollapse="isCollapse" />
+    </el-aside>
+
     <div class="content-wrapper">
-      <nav-header v-model:isCollapse="isCollapse" />
+      <el-header>
+        <nav-header v-model:isCollapse="isCollapse" />
+      </el-header>
       <el-main>
         <router-view />
       </el-main>
@@ -18,13 +23,4 @@ import NavHeader from './navHeader/index.vue'
 const isCollapse = ref(false)
 </script>
 
-<style lang="scss">
-.content-wrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  .el-main {
-    flex: 1;
-  }
-}
-</style>
+<style lang="scss"></style>

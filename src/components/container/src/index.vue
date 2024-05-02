@@ -4,14 +4,14 @@
       <nav-side :isCollapse="isCollapse" />
     </el-aside>
 
-    <div class="content-wrapper">
+    <el-container class="content-wrapper">
       <el-header>
         <nav-header v-model:isCollapse="isCollapse" />
       </el-header>
       <el-main>
         <router-view />
       </el-main>
-    </div>
+    </el-container>
   </el-container>
 </template>
 
@@ -23,4 +23,8 @@ import NavHeader from './navHeader/index.vue'
 const isCollapse = ref(false)
 </script>
 
-<style lang="scss"></style>
+<style lang="scss" scoped>
+.el-header {
+  border-bottom: 1px solid #eee;
+}
+</style>

@@ -11,11 +11,16 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/',
     component: Container,
-    redirect: '/chooseIcons',
+    redirect: '/chooseArea',
     children: [
       {
         path: '/chooseIcons',
         component: ChooseIcons
+      },
+      {
+        path: '/chooseArea',
+        component: () =>
+          import('@/views/chooseArea/index.vue')
       }
     ]
   }

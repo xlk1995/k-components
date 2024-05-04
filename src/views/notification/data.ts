@@ -5,38 +5,43 @@ export const list = [
       {
         title: '蒂姆·库克回复了你的邮件',
         time: '2019-05-08 14:33:18',
-        avatar: 'https://gw.alipayobjects.com/zos/rmsportal/ThXAXghbEsBCCSDihZxY.png'
+        avatar:
+          'https://gw.alipayobjects.com/zos/rmsportal/ThXAXghbEsBCCSDihZxY.png'
       },
       {
         title: '乔纳森·伊夫邀请你参加会议',
         time: '2019-05-08 14:33:18',
-        avatar: 'https://gw.alipayobjects.com/zos/rmsportal/OKJXDXrmkNshAMvwtvhu.png'
+        avatar:
+          'https://gw.alipayobjects.com/zos/rmsportal/OKJXDXrmkNshAMvwtvhu.png'
       },
       {
         title: '斯蒂夫·沃兹尼亚克已批准了你的休假申请',
         time: '2019-05-08 14:33:18',
-        avatar: 'https://gw.alipayobjects.com/zos/rmsportal/kISTdvpyTAhtGxpovNWd.png'
+        avatar:
+          'https://gw.alipayobjects.com/zos/rmsportal/kISTdvpyTAhtGxpovNWd.png'
       }
-
-    ],
+    ]
   },
   {
     title: '关注',
     content: [
       {
-        avatar: 'https://gw.alipayobjects.com/zos/rmsportal/fcHMVNCjPOsbUGdEduuv.jpeg',
+        avatar:
+          'https://gw.alipayobjects.com/zos/rmsportal/fcHMVNCjPOsbUGdEduuv.jpeg',
         title: '曲丽丽 评论了你',
         desc: '描述信息描述信息描述信息',
         time: '3小时前'
       },
       {
-        avatar: 'https://gw.alipayobjects.com/zos/rmsportal/fcHMVNCjPOsbUGdEduuv.jpeg',
+        avatar:
+          'https://gw.alipayobjects.com/zos/rmsportal/fcHMVNCjPOsbUGdEduuv.jpeg',
         title: '曲丽丽 评论了你',
         desc: '描述信息描述信息描述信息',
         time: '3小时前'
       },
       {
-        avatar: 'https://gw.alipayobjects.com/zos/rmsportal/fcHMVNCjPOsbUGdEduuv.jpeg',
+        avatar:
+          'https://gw.alipayobjects.com/zos/rmsportal/fcHMVNCjPOsbUGdEduuv.jpeg',
         title: '曲丽丽 评论了你',
         desc: '描述信息描述信息描述信息',
         time: '3小时前'
@@ -50,7 +55,7 @@ export const list = [
         title: '任务名称',
         desc: '任务需要在 2017-01-12 20:00 前启动',
         tag: '未开始',
-        tagType: ''
+        tagType: 'info'
       },
       {
         title: '第三方紧急代码变更',
@@ -65,7 +70,7 @@ export const list = [
         tagType: 'warning'
       }
     ]
-  },
+  }
 ]
 export const actions = [
   {
@@ -75,5 +80,5 @@ export const actions = [
   {
     text: '查看更多',
     icon: 'edit'
-  },
+  }
 ]

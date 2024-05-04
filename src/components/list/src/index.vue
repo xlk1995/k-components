@@ -22,6 +22,13 @@
               <div class="content">
                 <div class="title" v-if="item1.title">
                   {{ item1.title }}
+                  <template v-if="item1.tag">
+                    <el-tag
+                      :type="item1.tagType"
+                      :key="index1"
+                      >{{ item1.tag }}</el-tag
+                    >
+                  </template>
                 </div>
                 <div class="desc" v-if="item1.desc">
                   {{ item1.desc }}

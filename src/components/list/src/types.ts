@@ -5,7 +5,6 @@ export interface IListItem {
   time?: string
   tag?: string
   tagType?:
-    | ''
     | 'primary'
     | 'success'
     | 'info'

@@ -6,4 +6,7 @@
 
 <style lang="scss">
 @import '@/styles/index.scss';
+.el-popper {
+  padding: 0 !important;
+}
 </style>

@@ -4,3 +4,20 @@
     overflow: scroll;
   }
 }
+
+.k-list__tabs {
+  .el-tabs__nav {
+    display: flex;
+    width: 100%;
+  }
+
+  .el-tabs__item {
+    flex: 1;
+  }
+}
+
+.k-notification__popover {
+  .el-popover {
+    padding: 0 20px;
+  }
+}

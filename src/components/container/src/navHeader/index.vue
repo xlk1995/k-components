@@ -25,4 +25,8 @@ const handleCollapse = () => {
   display: flex;
   align-items: center;
 }
+svg {
+  height: 1em;
+  width: 1em;
+}
 </style>

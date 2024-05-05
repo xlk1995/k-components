@@ -14,7 +14,7 @@ const routes: RouteRecordRaw[] = [
     redirect: '/chooseArea',
     children: [
       {
-        path: '/chooseIcons',
+        path: '/chooseIcon',
         component: ChooseIcons
       },
       {
@@ -30,6 +30,10 @@ const routes: RouteRecordRaw[] = [
         path: '/notification',
         component: () =>
           import('@/views/notification/index.vue')
+      },
+      {
+        path: '/menu',
+        component: () => import('@/views/menu/index.vue')
       }
     ]
   }

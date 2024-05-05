@@ -4,6 +4,11 @@
       @changeStart="changeStart"
       @changeEnd="changeEnd"
     ></k-choose-time>
+
+    <k-choose-date
+      @changeStartDate="changeStart"
+      @changeEndDate="changeEnd"
+    ></k-choose-date>
   </div>
 </template>
 

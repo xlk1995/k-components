@@ -7,6 +7,7 @@
       :step="startStep"
       :end="startTimeEnd"
       :placeholder="startPlaceholder"
+      v-bind="$attrs.startOptions!"
     />
     <el-time-select
       v-model="endTime"
@@ -16,12 +17,15 @@
       :end="endTimeEnd"
       :placeholder="endPlaceholder"
       :disabled="endTimeDisabled"
+      v-bind="$attrs.endOptions!"
     />
   </div>
 </template>
 
 <script setup lang="ts">
-import { computed, ref, watch } from 'vue'
+import { computed, ref, useAttrs, watch } from 'vue'
+const attrs = useAttrs()
+console.log(attrs)
 
 defineProps({
   startPlaceholder: {
